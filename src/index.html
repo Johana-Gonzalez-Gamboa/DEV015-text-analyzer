@@ -10,9 +10,48 @@
 <body>
   <script src="index.js" type="module"></script>
 
-  <h1>HOLA GENtE</h1>
+  <header>
+    <h1>Analizador de texto</h1>
+  </header>
+  <main>
+    <section>
+      <ul>
+        <li data-testid="character-count" class="caracteres">
+          Caracteres
+        </li>
+        <li data-testid="character-no-spaces-count" class="caracteres-sin-espacio">
+          Caracteres sin espacio
+        </li>
+        <li data-testid="word-count" class="palabras">
+          Palabras
+        </li>
+        <li data-testid="number-count" class="numeros">
+          Numeros
+        </li>
+        <li data-testid="number-sum" class="suma-numeros">
+          Suma Numeros
+        </li>
+        <li data-testid="word-length-average" class="promedio-longitud">
+          Promedio Longitud
+        </li>
+      </ul>
+    </section>
+    <section>
+      <textarea name="user-input" rows="10" cols="50" placeholder="Escriba texto..."></textarea>
+    </section>
+    <section>
+      <button id="reset-button" type="button">Limpiar metricas</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Autor: Johana Gonzalez</p>
+  </footer>
 
 
-  
+
+
+
 </body>
+
 </html>
