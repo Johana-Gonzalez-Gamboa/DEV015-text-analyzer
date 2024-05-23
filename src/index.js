@@ -24,6 +24,11 @@ textArea.addEventListener(
 
     lis[2].innerHTML ="Palabras: " + totalPalabras
 
+    // Logica para contao de numeros
+    const totalNumeros = analyzer.getNumberCount(event.target.value)
+
+    lis[3].innerHTML = "Numeros: " + totalNumeros
+
 
   }
 )
