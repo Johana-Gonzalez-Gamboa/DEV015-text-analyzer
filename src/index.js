@@ -17,7 +17,7 @@ textArea.addEventListener(
     // Logica para conteo de caracteres sin espacios y puntuacion
     const totalCaracteresSinEspacios = analyzer.getCharacterCountExcludingSpaces(event.target.value)
 
-    lis[1].innerHTML = "Caracteres sin espacios y puntuacion: " + totalCaracteresSinEspacios
+    lis[1].innerHTML = "Caracteres sin espacios: " + totalCaracteresSinEspacios
 
     // Logica para conteo de palabras
     const totalPalabras = analyzer.getWordCount(event.target.value)
