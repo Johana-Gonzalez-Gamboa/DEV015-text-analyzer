@@ -64,20 +64,20 @@ const analyzer = {
       //4.- Obtener el elemento de la posicion index
       let element = listaNumeros[index];
 
-      // Valida que exista el punto en element
+      //5.- Valida que exista el punto en element
       if (element.indexOf(".") > 0) {
-        // Quita el ultimo punto
+        //6.- Quita el ultimo punto
         element = element.match(/\b\d+(\.\d+)?\.?\b/g);
       }
       
-      //5.- Validamos si es numero y que no cuente los espacios
+      //7.- Validamos si es numero y que no cuente los espacios
       if (isNaN(element) === false && element !== "") {
-        //6.- Como se que es numero element se agrega a lista total numeros
+        //8.- Como se que es numero element se agrega a lista total numeros
         listaTotalNumeros.push(element)
       }
     }
     
-    //7.- Retorno total de numeros
+    //9.- Retorno total de numeros
     return listaTotalNumeros.length
   },
 
@@ -91,20 +91,20 @@ const analyzer = {
     //3.- Recorro el arreglo numeros con metodo map
     numeros.map(numero => {
 
-      // Valida que exista el punto en numero
+      //4.- Valida que exista el punto en numero
       if (numero.indexOf(".") > 0) {
         // Quita el ultimo punto
         numero = parseFloat(numero.match(/\b\d+(\.\d+)?\.?\b/g));
       }
 
-      //4.- Valido si es un numero y que no considere espacios
+      //5.- Valido si es un numero y que no considere espacios
       if (isNaN(numero) === false && numero !== "") {
-        //5.- Como se que es un numero, entonces voy sumando numero a suma total
+        //6.- Como se que es un numero, entonces voy sumando numero a suma total
         sumaTotal = sumaTotal + parseFloat(numero)
       }
     })
     
-    //6.- Retono la suma total de los numeros
+    //7.- Retono la suma total de los numeros
     return sumaTotal
   },
 };
